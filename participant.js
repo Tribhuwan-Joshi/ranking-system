@@ -1,15 +1,11 @@
 class Participant {
+  #score;
   constructor(id) {
     this.id = id;
-    this.score = 0;
+    this.#score = 0;
   }
-  addScore(points) {
-    this.score += points;
-  }
-
-  deductScore(points) {
-    this.score -= points;
+  get score() {
+    return this.#score;
   }
 }
-
 module.exports = Participant;
