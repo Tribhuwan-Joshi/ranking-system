@@ -1,7 +1,7 @@
 class Voter {
   constructor(id) {
     this.id = id;
-    this.voteData = { voteFor: null, score: null };
+    this.voteData = { voteFor: null, score: 0 };
   }
   vote(participantId, score = 50) {
     this.voteData.voteFor = participantId;
