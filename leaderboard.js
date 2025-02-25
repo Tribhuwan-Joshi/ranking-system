@@ -35,4 +35,4 @@ class Leaderboard {
   }
 }
 
-module.exports = new Leaderboard();
+module.exports = new Leaderboard(); // defining this as singeloton object for now as we have only one leaderboard

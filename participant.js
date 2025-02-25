@@ -1,7 +1,14 @@
 class Participant {
-  constructor(id, score = 0) {
+  constructor(id) {
     this.id = id;
-    this.score = score;
+    this.score = 0;
+  }
+  addScore(points) {
+    this.score += points;
+  }
+
+  deductScore(points) {
+    this.score -= points;
   }
 }
 
