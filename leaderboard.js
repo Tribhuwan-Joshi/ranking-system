@@ -1,22 +1,38 @@
 class Leaderboard {
-  constructor(voters = [], participants = []) {
-    this.votes = new Map();  // voterId: {participantID:number, score: number}
+  constructor() {
+    this.isEnd = false;
+    this.voters = [];
     this.participants = [];
-    this.ranks = [];
+    this.rankings = new MaxHeap();
   }
 
-  showRanks() {
-    this.ranks.forEach((p, i) => {
-      console.log(`Rank - ${i + 1} ParticipantId - ${p.id} Score - ${p.score}`);
-    });
+  addVoters(voters) {
+    this.voters = voters;
+  }
 
-    vote(voterId, participantsId){
-        const previousVote = this.votes.get(voterId);
-        if(previousVote){
-            // remove that score from the participants
-            const prevParticipant = previousVote.participantId;
-            const prevScore = previousVote.score;
-        }
+  addParticipants(participants) {
+    this.participants = participants;
+  }
+
+  vote(voterId, participantId, score = 50) {
+    if (!this.isEnd) {
+    } else {
+      console.log('Voting is closed');
+    }
+  }
+
+  stopVoting() {
+    this.isEnd = true;
+  }
+
+  // if no votes has been cast yet, it will return the participants that added first
+  declareWinner() {
+    if (!this.isEnd) {
+      console.log('Voting is not closed');
+    } else {
+      console.log('The Id of winner is ', this.rankings.top().id);
     }
   }
 }
+
+module.exports = new Leaderboard();

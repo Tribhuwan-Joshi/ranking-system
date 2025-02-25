@@ -6,7 +6,6 @@ class Voter {
   vote(participantId, score = 50) {
     this.voteData.voteFor = participantId;
     this.voteData.score = score;
-    return this;
   }
 }
 
