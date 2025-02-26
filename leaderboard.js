@@ -50,4 +50,4 @@ class Leaderboard {
   }
 }
 
-module.exports = new Leaderboard(); // singleton
+module.exports = Leaderboard; // singleton

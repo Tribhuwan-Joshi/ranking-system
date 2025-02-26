@@ -1,13 +1,15 @@
-const leaderboard = require('./leaderboard');
 const Voter = require('./voter');
 const Participant = require('./participant');
+const Leaderboard = require('./leaderboard');
 
-// create voters -> new Voter(id), use uuid in production
-const v1 = new Voter(1);
-const v2 = new Voter(2);
-const v3 = new Voter(3);
-const v4 = new Voter(4);
-const v5 = new Voter(5);
+const leaderboard = new Leaderboard();
+
+// create voters -> new Voter(leaderboard,id), use uuid in production -> leaderboard to connect to
+const v1 = new Voter(leaderboard, 1);
+const v2 = new Voter(leaderboard, 2);
+const v3 = new Voter(leaderboard, 3);
+const v4 = new Voter(leaderboard, 4);
+const v5 = new Voter(leaderboard, 5);
 
 // create participants
 const p1 = new Participant(1);
