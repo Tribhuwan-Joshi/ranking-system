@@ -1,8 +1,8 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert');
-const Leaderboard = require('./leaderboard');
-const Voter = require('./voter');
-const Participant = require('./participant');
+const Leaderboard = require('../classes/leaderboard');
+const Voter = require('../classes/voter');
+const Participant = require('../classes/participant');
 
 describe('Leaderboard', () => {
   const leaderboard = new Leaderboard();

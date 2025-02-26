@@ -1,6 +1,6 @@
-const Voter = require('./voter');
-const Participant = require('./participant');
-const Leaderboard = require('./leaderboard');
+const Voter = require('./classes/voter');
+const Participant = require('./classes/participant');
+const Leaderboard = require('./classes/leaderboard');
 
 const leaderboard = new Leaderboard();
 

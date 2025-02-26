@@ -1,4 +1,4 @@
-const MaxHeap = require('./max-heap');
+const MaxHeap = require('../max-heap');
 
 class Leaderboard {
   constructor() {
