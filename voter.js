@@ -3,7 +3,6 @@ const leaderboard = require('./leaderboard');
 class Voter {
   constructor(id) {
     this.id = id;
-    this.votedFor = null;
   }
 
   vote(pid, score) {

@@ -17,3 +17,8 @@
 - Heapify algorithm is used to update the rankings
 
 - Only the last vote would be eligible of a voter.
+
+**_Note: Here I am assuming something:-_**
+
+- The voter id and votes are valid and already santizied by previous interface
+- All voters and participants would be stored somewhere and persist

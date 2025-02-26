@@ -19,9 +19,9 @@ leaderboard.addParticipants([p1, p2, p3]);
 
 // After every vote the ranking will be logged
 
-v1.vote(p1, 89);
-v2.vote(p2, 23);
-v3.vote(p2, 32);
-v1.vote(p3, 43); // voted again, only last vote is eligible to count
-v4.vote(p1, 88);
-v5.vote(p3, 32);
+v1.vote(p1.id, 89);
+v2.vote(p2.id, 23);
+v1.vote(p3.id, 43); // voted again, only last vote is eligible to count
+// v3.vote(p2.id, 32);
+// v4.vote(p1.id, 88);
+// v5.vote(p3.id, 32);a
